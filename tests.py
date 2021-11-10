@@ -9,6 +9,10 @@ class TestCase(unittest.TestCase):
         password = ''
         self.assertFalse(check_pwd(password))
 
+    def testTwo(self):
+        password = 'ABCDEFGHIJ'
+        self.assertFalse(check_pwd(password))
+
 
 if __name__ == '__main__':
     unittest.main()
