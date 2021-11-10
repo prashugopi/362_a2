@@ -17,4 +17,11 @@ def check_pwd(password):
     if upper == 0:
         return False
 
+    digits = 0 
+    for i in password:
+        if i.isdigit():
+            digits += 1
+    if digits == 0:
+        return False
+
     return True
