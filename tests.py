@@ -21,5 +21,9 @@ class TestCase(unittest.TestCase):
         password = 'abcdEFGHIJ'
         self.assertFalse(check_pwd(password))
 
+    def testFive(self):
+        password = 'abcdEFGHIJ1'
+        self.assertFalse(check_pwd(password))
+
 if __name__ == '__main__':
     unittest.main()
