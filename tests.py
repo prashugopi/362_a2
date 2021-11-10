@@ -13,6 +13,10 @@ class TestCase(unittest.TestCase):
         password = 'ABCDEFGHIJ'
         self.assertFalse(check_pwd(password))
 
+    def testThree(self):
+        password = 'abcdefghij'
+        self.assertFalse(check_pwd(password))
+
 
 if __name__ == '__main__':
     unittest.main()
