@@ -24,4 +24,12 @@ def check_pwd(password):
     if digits == 0:
         return False
 
+    symbols = 0
+    for i in password:
+        for j in '~`!@#$%^&*()_+-=':
+            if i == j:
+                symbols += 1
+    if symbols == 0:
+        return False
+
     return True
